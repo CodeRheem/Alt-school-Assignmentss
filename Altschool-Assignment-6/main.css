@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.scissor-logo{
+    width: 1,150px;
+    height: 44px;
+    top: 12px;
+   margin-left: 9rem;
+}
+
+.hero-section{
+    background-image: url(Assest6/Hero\ section.png);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 80px;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+}
+
+a{
+    gap: 4rem;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.login a{
+    text-decoration: none;
+}
+
+.trytofree a{
+    border: 3px solid #0065FE;
+    text-decoration: none;
+}
