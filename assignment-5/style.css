@@ -1,0 +1,425 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* End of CSS Reset */
+
+
+/* Navigation link styling for the assignments */
+.header {
+  background-color: #fff;
+  width: 100%;
+  padding: 0rem 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.one {
+  background-color: #333;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.one ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.one ul li {
+  margin: 0 1rem;
+}
+
+.one ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+/* End of Navigation link styling for the assignments */
+
+/* styling for nav content */
+ .banner {
+  background-color: #F2F2F2;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem .5rem;
+}
+
+.img-logo {
+  width: 7rem;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu ul li {
+  margin: 0 .5rem;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #1D2C3C;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.menu ul li .acct_btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #1D2C3C;
+}
+
+.line {
+  width: 95%;
+  height: 1px;
+  background-color: #d1d0d0;
+  margin: 0 auto;
+}
+
+/* End of styling for nav content */
+
+/* styling for the main content */
+
+ main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.2rem;
+  width: 95%;
+  margin-top: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 595px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+}
+
+.group1-form {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+
+.line2 {
+  width: 80.5vw;
+  height: 1.5px;
+  background-color: #d1d0d0;
+  margin-left: -1rem;
+  margin-top: 2rem;
+  opacity: 0.3;
+}
+
+.heading h1 {
+  font-size: 1.5rem;
+  color: #1D2C3C;
+  text-shadow: 3px 4px 3px #ccc;
+  font-weight: 400;
+}
+
+.group2 {
+  background-color: #1179BF;
+  padding:.5rem 1rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.side-bar{
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.form_input1,
+.form_input2 {
+  margin-top: 2rem;
+}
+
+.basic_info h2,
+.payment_info h2 {
+  font-size: 1rem;
+  color: #1D2C3C;
+  font-weight: 700;
+  margin-left: 2.5rem;
+}
+
+.basic_info,
+.payment_info {
+  position: relative;
+}
+
+.num1,
+.num2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.form1,
+.form2 {
+  margin-top: 1.4rem;
+}
+
+label {
+  font-size: 0.8rem;
+  color: #1D2C3C;
+  font-weight: 400;
+}
+
+.email {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+input[type="text"],
+input[type="email"]{
+  width: 100%;
+  padding: 0.4rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #EDEFF2;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+  color: #646E7A;
+  font-size: 12px;
+  padding-left: 15px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border: 1px solid #1179BF;
+}
+
+.form2 {
+  position: relative;
+}
+
+.form2::after {
+  content: " MM/YY       CVC ";
+  position: absolute;
+  right: 15px;
+  top: 60%;
+  color: #646E7A;
+  font-size: 12px;
+  pointer-events: none;
+  word-spacing: 15px;
+}
+
+.flex_input {
+  display: block;
+}
+
+.btn_section {
+  margin-top: 2rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #038E7D;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  font-size: .95rem;
+}
+
+.p_txt {
+  position: relative;
+  margin-top: 1.5rem;
+  transform: translateX(15%);
+}
+
+.p_txt p {
+  font-size: 14px;
+  color: #1D2C3C;
+  font-weight: 700;
+}
+
+.p_txt p span {
+  color: #646E7A;
+  font-weight: 400;
+  text-align: left;
+}
+
+.p_txt p .contact {
+  text-decoration: underline;
+  width: 100%;
+}
+
+.q_mark {
+  position: absolute;
+  width: 15px;
+  left: -10%;
+  top: 7%;
+}
+
+br {
+  display: none;
+}
+
+.img_stripe {
+  margin-top: 1.5rem;
+  transform: translate(32%, 0);
+}
+
+.img-stripe {
+  width: 85px;
+}
+
+.copyright p {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 14px;
+  color: #636B6F;
+}
+
+.copyright p span {
+  color: #31708F;
+}
+
+
+@media screen and (min-width: 768px){
+  nav {
+    flex-direction: row;
+    padding: 1rem 1.5rem;
+  }
+
+  .banner {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 580px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+  }
+
+  .group1-form {
+    background-color: #fff;
+    width: 100%;
+    padding:2.5rem 2rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0;
+  }
+
+  .group2 {
+    background-color: #1179BF;
+    padding:2.5rem 2rem;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 0;
+  }
+
+  .email {
+    margin-top: 1rem;
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+
+  .flex_input {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .p_txt {
+    transform: translateX(30%);
+  }
+
+  .q_mark {
+    left: -5%;
+    top: 10%;
+  }
+
+  br {
+    display: block;
+  }
+
+  .img_stripe {
+    transform: translate(45%, 0);
+  }
+
+  .line2 {
+    width: 38.5vw;
+  }
+}

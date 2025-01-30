@@ -10,6 +10,35 @@ body{
     font-family: 'Lato';
 }
 
+nav {
+    background-color: #333;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
 .hucberry{
     margin-top: 50px;
     margin-left: 17px;

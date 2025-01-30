@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Assignment4</title>
+</head>
+<body>
+    <div role="navigation">
+        <nav>
+            <ul>
+                <li><a href="../index.html">assignment1</a></li>
+                <li><a href="../Alt-school-Assignmentss/assignment-2/index.html">assignment2</a></li>
+                <li><a href="../Alt-school-Assignmentss/assignment-3/index.html">assignment3</a></li>
+                <li><a href="../Alt-school-Assignmentss/assignment-4/index.html">assignment4</a></li>
+                <li><a href="../Alt-school-Assignmentss/assignment-5/index.html">assignment5</a></li>
+                <li><a href="../Alt-school-Assignmentss/assignment-6/index.html">assignment6</a></li>
+            </ul>
+        </nav>
+    </div>
+   <div role="form" class="container">
+    <header>
+        <div class="form-container">
+            <div class="img-logo">
+                <img class="logo" src="assests/Logo.png" alt="logo">
+            </div>
+            <div class="form-title">
+                <h1>For Individuals</h1>
+                <p class="sub-title-mobile">
+                    Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.
+                </p>
+                <p  class="sub-title-desktop">
+                    Start benefiting from the wellness experience. For companies looking on increasing productivity,
+                     and improving organization wellness.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form action="index.html" method="post">
+                <fieldset class="name">
+                    <p>
+                        <label for="name">First Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </p>
+                    <p>
+                        <label for="name">Last Name</label>
+                        <input type="text" name="name" id="name" required>
+                </fieldset>
+                
+                <fieldset class="gender">
+                    <p>
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender">
+                            <option value="select">Select here</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label class="dob" for="dob">Date of Birth</label>
+                        <input type="date" name="dob" id="dob" placeholder="Select here" required>
+                    </p>
+                </fieldset>
+
+                <fieldset class="weight-height">
+                    <p class="weight">
+                        <label for="weight">Weight (KG)</label>
+                        <input type="number" name="weight" id="weight" placeholder="Enter Weight" required>
+                    </p>
+                    <p class="height">
+                        <label for="height">Height (CM)</label>
+                        <input type="number" name="height" id="height" placeholder="Enter height" required>
+                </fieldset>
+
+                <fieldset>
+                    <p>
+                        <label for="activity">Activity</label>
+                        <select name="activity" id="activity">
+                            <option value="select">Select here</option>
+                            <option value="sedentary">Sedentary</option>
+                            <option value="light">Light</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="active">Active</option>
+                            <option value="very active">Very Active</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <p class="password">
+                        <label for="password">Password</label>
+                        <img src="assests/show.png" alt="eye icon" class="eye-icon">
+                        <input type="password" name="password" id="password" required>
+                    </p>
+                </fieldset>
+
+                <button id="submit-btn">Register</button>
+            </form>
+
+            <footer>
+                <p>
+                    By clicking Register, you agree to our <span> Terms of Use</span> and our <span>Privacy Policy</span>
+                </p>
+            </footer>
+        </div>
+    </main>
+   </div>
+</body>
+</html>

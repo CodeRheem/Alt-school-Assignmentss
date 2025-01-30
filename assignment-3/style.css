@@ -1,0 +1,207 @@
+
+/* CSS Reset */
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+/* End of CSS Reset */
+
+*,*::before,*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: #e5e7eb;
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+/* Navigation link styling for assignment */
+
+
+nav {
+  background-color: #333;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+/* End of Navigation link styling for assignment */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0 8px;
+    background-color: #A7A8CD;
+    border: 8px solid #e5e7eb ;
+    margin-top: 1rem;
+}
+
+.img {
+    width: 300px;
+    height: 250px;
+}
+
+.watch {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.description {
+    background-color: #fff;
+    padding: 2rem 1.5rem;
+    width: 300px;
+    margin-top: -2.5rem;
+    line-height: 1.5;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.container {
+   width: 100%;
+   max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.description h1 {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.description span {
+    color: #8A8A8A;
+    font-size: 0.8rem;
+}
+
+.header {
+    position: relative;
+}
+
+.header p {
+    background-color: #fdf2b4;
+    font-weight: 700;
+    padding: 0.4rem 0.8rem;
+    width: 200px;
+    border-radius: 6px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    top: 7px;
+    left: -11px;
+}
+
+@media (min-width: 390px){
+    .container {
+        padding: 10px 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin-left: 3rem;
+        margin-right: -3rem;
+    }
+
+    .description {
+        width: 550px;
+        margin-top: 6rem;
+    }
+
+    .img {
+        width: 550px;
+        height: 300px;
+    }
+
+    .header p {
+        width: 220px;
+        padding: 0.8rem;
+        font-weight: 800;
+    }
+
+    .description h1 {
+        font-size: 2rem;
+    }
+
+    .description span {
+        font-size: 1rem;
+    }
+
+    .description p {
+        font-size: 1.3rem;
+    }
+}
